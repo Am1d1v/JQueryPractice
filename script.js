@@ -5,5 +5,9 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
 
+    $('.list-item:eq(2)').on("click", (() => {
+        $('.image:odd').fadeToggle(900);
+    }));
+
 });
 
