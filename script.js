@@ -9,5 +9,12 @@ $(document).ready(function(){
         $('.image:odd').fadeToggle(900);
     }));
 
+    $('.list-item:eq(4)').on("click", (() => {
+        $('.image:even').animate({
+            opacity: "toggle",
+            height: 'toggle'
+        }, 2000);
+    }));
+
 });
 
